@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Conor Kelley" />
+    <title>Student Link Menu</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="masthead">
+        <a href="http://www.bu.edu/" target="blank"
+          ><img src="BU-Brick-Logo.png" alt="Boston University" />
+        </a>
+        <h1>student link</h1>
+      </div>
+    </header>
+    <hr />
+    <!-- <div class="welcome">
+      <p>
+        Welcome to the Student Link... your link to your records at Boston
+        University. <br /><br />If you are a new user, please check out
+        <a href="basics.html">Getting Started </a> in the Basics area.<br /><br />
+        Menu items listed in italics are public; all others require a BU Login
+        Name.
+      </p>
+    </div> -->
+    <button id="expressButton">▼</button>
+    <div class="express-link">
+      <!-- <h1>Express Link ⚡</h1> -->
+      <ul id="link-options">
+        <li><a href="#">• LfA Status •</a></li>
+        <li><a href="#">• Check Your Email •</a></li>
+        <li><a href="#">• Final Exam Schedule •</a></li>
+        <li><a href="#">• Duo for Google Apps •</a></li>
+        <li><a href="#">• GPA Estimator •</a></li>
+        <li><a href="#">• MBTA Semester Pass •</a></li>
+        <li><a href="#">• University Class Schedule •</a></li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="wrapper">
+        <div
+          class="option circle"
+          id="academics"
+          onmouseover="if(document.documentElement.clientWidth > 992) changeTextMouseOn('academics')"
+          onmouseout="if(document.documentElement.clientWidth > 992)if(document.documentElement.clientWidth > 992)restoreTextMouseOff('academics');"
+        >
+          <a href="academics.html">
+            <h1 id="Academics">Academics</h1>
+          </a>
+        </div>
+        <div
+          class="option circle"
+          id="degree-advice"
+          onmouseover="if(document.documentElement.clientWidth > 992)changeTextMouseOn('degreeAdvice')"
+          onmouseout="if(document.documentElement.clientWidth > 992)restoreTextMouseOff('degreeAdvice')"
+        >
+          <a href="#" onclick="degAdvAlert()"
+            ><h1 id="DegreeAdvice">
+              Degree<span class="period">.</span>Advice
+            </h1></a
+          >
+        </div>
+        <div
+          class="option circle"
+          id="money-matters"
+          onmouseover="if(document.documentElement.clientWidth > 992)changeTextMouseOn('moneyMatters')"
+          onmouseout="if(document.documentElement.clientWidth > 992)restoreTextMouseOff('moneyMatters')"
+        >
+          <a href="moneymatters.html"
+            ><h1 id="MoneyMatters">
+              Money<span class="period">.</span>Matters
+            </h1></a
+          >
+        </div>
+        <div
+          class="option circle"
+          id="food-shelter"
+          onmouseover="if(document.documentElement.clientWidth > 992)changeTextMouseOn('foodShelter')"
+          onmouseout="if(document.documentElement.clientWidth > 992)restoreTextMouseOff('foodShelter')"
+        >
+          <a href="food.html"
+            ><h1 id="FoodShelter">
+              Food<span class="period">.</span>&<span class="period">.</span
+              >Shelter
+            </h1></a
+          >
+        </div>
+        <div
+          class="option circle"
+          id="work"
+          onmouseover="if(document.documentElement.clientWidth > 992)changeTextMouseOn('work')"
+          onmouseout="if(document.documentElement.clientWidth > 992)restoreTextMouseOff('work')"
+        >
+          <a href="work.html"><h1 id="Work">Work</h1></a>
+        </div>
+        <div
+          class="option circle"
+          id="personal"
+          onmouseover="if(document.documentElement.clientWidth > 992)changeTextMouseOn('personal')"
+          onmouseout="if(document.documentElement.clientWidth > 992)restoreTextMouseOff('personal')"
+        >
+          <a href="personal.html"><h1 id="Personal">Personal</h1></a>
+        </div>
+        <div
+          class="option circle"
+          id="basics"
+          onmouseover="if(document.documentElement.clientWidth > 992)changeTextMouseOn('basics')"
+          onmouseout="if(document.documentElement.clientWidth > 992)restoreTextMouseOff('basics')"
+        >
+          <a href="basics.html"><h1 id="Basics">Basics</h1></a>
+        </div>
+        <div
+          class="option circle"
+          id="index"
+          onmouseover="if(document.documentElement.clientWidth > 992)changeTextMouseOn('index')"
+          onmouseout="if(document.documentElement.clientWidth > 992)restoreTextMouseOff('index')"
+        >
+          <a href="directory.html"><h1 id="Index">Index</h1></a>
+        </div>
+      </div>
+    </nav>
+    <footer class="foot">
+      <p id="access-time">Generated <span id="clockbox"></span></p>
+      <p>|</p>
+      <p>
+        Logo:
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Boston_University_wordmark.svg"
+          target="blank"
+          >Boston University</a
+        >, Public domain, via Wikimedia Commons
+      </p>
+      <p>|</p>
+      <p>
+        &copy;
+        <a href="https://github.com/zenDev-2" target="blank"> zenDev-2</a> 2020
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
